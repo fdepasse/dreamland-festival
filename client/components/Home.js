@@ -9,7 +9,6 @@ function Home() {
   const [actClicked, updateActClicked] = useState({})
   const [modal, showModal] = useState(false)
 
-
   // Fetch the acts data from our API
   useEffect(() => {
     axios.get('api/acts')
