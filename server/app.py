@@ -24,7 +24,6 @@ app.register_blueprint(order_cont.router, url_prefix='/api')
 app.register_blueprint(reaction_cont.router, url_prefix='/api')
 app.register_blueprint(user_cont.router, url_prefix='/api')
 
-## registering your blueprints...
 import os
 
 @app.route('/', defaults={'path': ''}) # homepage
