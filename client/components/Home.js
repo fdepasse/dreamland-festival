@@ -92,7 +92,7 @@ function Home() {
     {/* Live Now */}
     <section className="hero is-small">
       <div className="hero-body glow-subtitle">
-        Live now
+        Live now!
       </div>
     </section>
     {/* List of lives */}
