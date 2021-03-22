@@ -53,7 +53,6 @@ export default function Menu() {
     const selectedAct = key.value
     updateActID(selectedAct)
   }
-  console.log(`products array contains: ${products}`)
 
 
   async function submitUserOrder(token, actID, products) {
@@ -61,7 +60,6 @@ export default function Menu() {
       await axios.post(`/api/order/${actID}`, { products: products }, {
         headers: { Authorization: `Bearer ${token}` }
       })
-      console.log()
     } catch (err) {
       console.log(err)
     }
@@ -73,14 +71,13 @@ export default function Menu() {
       const itemToShow = menu.find(item => {
         return product === item.id
       })
-      // console.log(itemToShow)
       tempBasket.push(itemToShow)
       updateBasket(tempBasket)
     })
     showModal(!modal)
   }
 
-  
+
 
   return <main>
     <div className="tabs is-toggle is-fullwidth mb-0 menuOptions">

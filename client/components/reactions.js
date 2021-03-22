@@ -11,8 +11,9 @@ export default function Reaction({ actId }) {
   useEffect(() => {
     axios.get(`api/acts/${actId}`)
       .then(resp => updateAct(resp.data))
-  }, [act])
+  },[act])
 
+  console.log(act)
 
   if (!act.id) {
     return <h1>loading</h1>

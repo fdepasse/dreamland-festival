@@ -12,8 +12,6 @@ const NavBar = ({ history }) => {
       .then(resp => updateUser(resp.data))
   }, [])
 
-  //console.log(user.is_admin)
-
 
   {/* Refresh buttons on the nav ------------ */ }
   async function refreshNavBar() {

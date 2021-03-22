@@ -67,12 +67,11 @@ export default function AdminDashboard() {
         await axios.put(`/api/order/${orderid}`, ready, {
           headers: { Authorization: `Bearer ${token}` }
         })
-        // console.log(ready)
       } catch (err) {
         console.log(err)
       }
     } else {
-      return console.log('nope')
+      return console.log('error')
     }
     refreshOrder()
   }
@@ -88,9 +87,7 @@ export default function AdminDashboard() {
     return orders.filter(order => {
       return (order.act.stage_name === stage)
     })
-
   }
-  //console.log(stage)
 
   return <main className="container">
  
