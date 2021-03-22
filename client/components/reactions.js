@@ -13,7 +13,6 @@ export default function Reaction({ actId }) {
       .then(resp => updateAct(resp.data))
   },[act])
 
-  console.log(act)
 
   if (!act.id) {
     return <h1>loading</h1>
