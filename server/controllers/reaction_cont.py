@@ -22,7 +22,7 @@ def update_reactions(act_id):
 
 # Filtering the reaction list of the selected act
 # Will return either a reaction if the current user has made one (thruthy)
-# Or will return an empty array (falsy)
+# Or will return an empty list (falsy)
     find_reaction = [reaction for reaction in act.reactions if reaction.user.id == user.id]
 
 # If above is true it means we want to remove the reaction for this act and this user

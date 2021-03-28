@@ -1,9 +1,8 @@
-
-@import '~pretty-checkbox/src/pretty-checkbox.scss';
+@import "~pretty-checkbox/src/pretty-checkbox.scss";
 
 $danger: red;
 $primary: #1fc04a;
-$warning:rgb(241, 204, 40);
+$warning: rgb(241, 204, 40);
 
 $tabs-toggle-link-active-background-color: red;
 $navbar-dropdown-background-color: black;
@@ -11,7 +10,7 @@ $navbar-dropdown-background-color: black;
 @import "../../node_modules/bulma/bulma.sass";
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 button .is-danger {
@@ -27,9 +26,8 @@ button .is-danger {
 }
 
 .nav-color {
-  background-color:  black;
+  background-color: black;
 }
-
 
 .menu-list {
   width: 100%;
@@ -42,18 +40,17 @@ button .is-danger {
 
 .navitem:hover {
   background-color: #fff !important;
-  color: #f038a1!important;
+  color: #f038a1 !important;
 }
 
 .navmen {
-  color:white !important;
+  color: white !important;
   font-weight: bold;
 }
 
 .navimg {
   height: 40px;
   margin: 15px;
-  
 }
 
 .profileIcon {
@@ -70,12 +67,11 @@ label {
   font-weight: 500;
 }
 
-#hero-home{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imgur.com/Me0DXFE.jpg');
+#hero-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/Me0DXFE.jpg");
   background-position: center;
   background-size: cover;
 }
-
 
 .notready {
   visibility: hidden;
@@ -89,20 +85,20 @@ label {
 }
 
 .state .p-success {
-  width:100px
+  width: 100px;
 }
 
-#food-drinks-home{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imgur.com/Zh2pbwL.jpg');
+#food-drinks-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/Zh2pbwL.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.modal-card-head{
+.modal-card-head {
   background-image: linear-gradient(to right, #b9d1eb, #aec4f9, #b9b1ff, #d698f8, #f876de);
 }
 
-#stage{
+#stage {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   background-size: cover;
@@ -120,7 +116,7 @@ label {
 
 .navitem {
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .orderProcess {
@@ -133,20 +129,19 @@ label {
   color: white;
 }
 
-#footerTitle{
-  font-family: 'Pacifico', cursive;
+#footerTitle {
+  font-family: "Pacifico", cursive;
 }
 
 .orderToProcess {
   // background-color: #ff99cc;
-  background-color:$warning;
+  background-color: $warning;
 }
 
 .ordernotready {
   // background-color: #ff99cc;
-  background-color:$warning;
+  background-color: $warning;
 }
-
 
 .regform {
   padding-top: 30px;
@@ -161,7 +156,8 @@ label {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -170,7 +166,8 @@ label {
 }
 
 @-moz-keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -179,7 +176,8 @@ label {
 }
 
 @-webkit-keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -188,7 +186,8 @@ label {
 }
 
 @-ms-keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -197,7 +196,8 @@ label {
 }
 
 @-o-keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -205,34 +205,36 @@ label {
   }
 }
 .regformback {
-   background-color: #302929;
-   height: 100vh;
-   padding-top: 40px;
+  background-color: #302929;
+  height: 100vh;
+  padding-top: 40px;
 }
 
 .glow-nav {
-    font-size: 50px;
-    font-family: 'Pacifico', cursive;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f038a1, 0 0 20px #f038a1, 0 0 25px #f038a1, 0 0 30px #f038a1, 0 0 35px #f038a1;
- }
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f038a1, 0 0 20px #f038a1, 0 0 25px #f038a1, 0 0 30px #f038a1,
+    0 0 35px #f038a1;
+}
 
- .glow-subtitle {
+.glow-subtitle {
   font-size: 35px;
   display: flex;
   justify-content: flex-start;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: #fff;
   text-align: center;
-  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #f038a1, 0 0 2px #f038a1, 0 0 5px #f038a1, 0 0 10px #f038a1, 0 0 15px #f038a1;
+  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #f038a1, 0 0 2px #f038a1, 0 0 5px #f038a1, 0 0 10px #f038a1,
+    0 0 15px #f038a1;
 }
 
 .submitForm {
   font-size: 25px;
   text-align: center;
   background-color: #302929;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   // border-style: none;
   border-color: #fff;
@@ -242,7 +244,7 @@ label {
 }
 
 label {
-  color:  #fff !important;
+  color: #fff !important;
 }
 
 .loginbutton {
@@ -252,33 +254,33 @@ label {
 
 :focus {
   outline: none !important;
-  border:1px solid #f038a1;
+  border: 1px solid #f038a1;
   box-shadow: 0 0 10px #f038a1;
 }
 
-.menuOptions{
+.menuOptions {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .home-back {
   background-color: #302929;
 }
 
-
 .tabs.is-toggle li.is-active a {
   background-color: #f038a1 !important;
   border-color: #f038a1 !important;
 }
 
-.tabs.is-toggle.is-fullwidth, .tabs.is-toggle.a {
+.tabs.is-toggle.is-fullwidth,
+.tabs.is-toggle.a {
   background-color: #302929;
   border-color: #302929 !important;
   border-style: hidden !important;
 }
 
-.tabs.is-toggle a:hover{
+.tabs.is-toggle a:hover {
   background-color: #f038a1 !important;
   color: white !important;
 }
@@ -289,10 +291,10 @@ label {
 }
 
 .alignerror {
- color: #fff;
- display: flex;
- justify-content:center;
- padding-top: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
 }
 
 .footerLink {
