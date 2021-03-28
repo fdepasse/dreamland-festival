@@ -278,6 +278,7 @@ Finally to display the number of likes, I returned the reactions array length of
 * When a logged in user session expired, they do not get logged out automatically, making the navigation impossible until the user logs out and logs in again
 * When users visit the line up page, acts already added to their personal schedule are not toggled on
 * When completing an order, the user is send back to their profile but need to refresh the page to see their new order appear
+* When loading the page with a HTTPS protocol, the reaction button does not work since the response from the API is served over a HTTP request; to see the feature the app needs to be loaded with HTTP which, in a real production environment, would need to be addressed since we would be storing user data
 
 ### Potential Future Enhancements
 * On the user profile, show the personal schedule in chronological order
