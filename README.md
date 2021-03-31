@@ -85,7 +85,7 @@ You need to install [Node.js](https://nodejs.org/en/), [Python 3](https://www.py
 |          |                        [Fabien Depasse](https://github.com/fdepasse)                       |        [Kate Joyce](https://github.com/kate1562)        |                              [Lydia Wood](https://github.com/lydiarrrw)                              |
 |:--------:|:------------------------------------------------------------------------------------------:|:-------------------------------------------------------:|:----------------------------------------------------------------------------------------------------:|
 |  Backend | User Model / Authentication / Permission <br/> Reaction Model <br/> Secure Route decorator |     Product Model <br/> Order Model <br/> Act Model     | User Model / Authentication / Permission <br/> Reaction Model <br/> Error Handler & Logger decorator |
-| Frontend |  Home page Live Artists functionality <br/> Home page Reaction button <br/> User profile   | Order system and Menu page <br/> Line Up page and Modal |               Login & Register features <br/> Nav bar <br/> Admin order dashboard <br/>              |
+| Frontend |  Homepage Live Artists functionality <br/> Homepage Reaction button <br/> User profile   | Order system and Menu page <br/> Line Up page and Modal |               Login & Register features <br/> Nav bar <br/> Admin order dashboard <br/>              |
 
 <br/>
 
@@ -170,9 +170,9 @@ As we built components, we all added minimum styling using the CSS framework Bul
 ## <a name="featured-code"></a>Featured Code
 One of the most interesting and challenging feature I built on this project was the **reaction button** <img src="images/reaction.png"><img src="images/reaction2.png">.
 
-Users can click the button to **like or unlike a live artist** on the Home page. The idea being people can in real time react to the concert they are attending. 
+Users can click the button to **like or unlike a live artist** on the homepage. The idea being people can in real time react to the concert they are attending. 
 
-On the **frontend** I created a separate component called `Reaction` which renders on the Home page. The `Home` component passes the live artists' id as props to the `Reaction` component . The id is then used in the reaction component to update the dynamic path of our API end point. The API controller can then be called in a `useEffect` hook to get the artist data and store it in state `act`.  
+On the **frontend** I created a separate component called `Reaction` which renders on the homepage. The `Home` component passes the live artists' id as props to the `Reaction` component . The id is then used in the reaction component to update the dynamic path of our API end point. The API controller can then be called in a `useEffect` hook to get the artist data and store it in state `act`.  
 
 ```
 // useEffect second argument is [act] to ensure the data is effect is run each time the act changes
