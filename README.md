@@ -181,7 +181,7 @@ On the **frontend** I created a separate component called `Reaction` which rende
       .then(resp => updateAct(resp.data))
   },[act])
 ```
-> One of the main blocker I had when building this feature, was that once the reaction button was clicked, the database was updated correctly but the number of likes on the button was not, unless the page was refreshed. It was because in the above code, I was only calling the `useEffect` once after the component rendered initially, meaning I was stuck with the original `act` data with the original reaction count. To fix this, I added `[acts]` as second argument of `useEffect` making the effect run each time the act is updated with a new reaction.
+> One of the main blocker I had when building this feature, was that once the reaction button was clicked, the database was updated correctly but the number of likes on the button was not, unless the page was refreshed. It was because in the above code, I was only calling the `useEffect` once after the component rendered initially, meaning I was stuck with the original `act` data with the original reaction count. To fix this, I added `[act]` as second argument of `useEffect` making the effect run each time the act is updated with a new reaction.
 
 <br/>
 
