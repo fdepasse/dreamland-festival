@@ -107,7 +107,7 @@ From there we used [Quick DBD](https://www.quickdatabasediagrams.com/), an Entit
 
 <p align="center"><img src="images/models.png"><p/>
 
-We then detailed what views and controllers would need to serve our users on the frontend. We defined our routes including any dynamic paths we would need to pass information on (i.e. ids), grouped them by the relevant controller anb specified which routes would need to be decorated by our `@secure_route` decorator.
+We then detailed what views and controllers would need to serve our users on the frontend. We defined our routes including any dynamic paths we would need to pass information on (i.e. ids), grouped them by the relevant controller and specified which routes would need to be decorated by our `@secure_route` decorator.
 
 > `@secure_route` is a decorator we put in place to ensure the user trying to call the API is logged in and is a valid user. To achieve this we check the user have a valid token, which they should have received at login (using [Json Web Token library](https://jwt.io/)). If this is the case, the API can be called. Another useful feature of `@secure_route` is to decode the user token to extract the payload. Because the user id is stored on the paylod, decoding the token allows us to check at any point who is the user logged in and therefore put in place permission rules for our endpoints (i.e. users are only allowed to see their own profile).
 
